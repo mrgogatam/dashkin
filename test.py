@@ -14,11 +14,11 @@ def send_echo(message):
 	answer += "Температура: " + str(temp) + "\n"
 
 	if temp < 5:
-		answer += "Дюша, оденься тепло!"
+		answer += "Оденься тепло!"
 	elif temp < 15:
-		answer += "Даха, на улице прохладно, надень кофту!"
+		answer += "На улице прохладно, надень кофту!"
 	else:
-		answer += "Кисюк, на улице тепло!"
+		answer += "На улице тепло!"
 
 	bot.send_message(message.chat.id, answer)
 bot.polling(none_stop = True)
